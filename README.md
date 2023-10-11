@@ -2,19 +2,19 @@
  valgrind excersise for enpm808x Manav Nagda
 
 # standard install via command line(terminal)
-# Configure the project and generate a native build system:
-  # Must re-run this command whenever any CMakeLists.txt file has been changed.
+Configure the project and generate a native build system:
+   Must re-run this command whenever any CMakeLists.txt file has been changed.
   cmake -S ./ -B build/
-# Compile and build the project:
-  # rebuild only files that are modified since the last build
+ Compile and build the project:
+   rebuild only files that are modified since the last build
   cmake --build build/
-  # or rebuild everything from scracth
+   or rebuild everything from scracth
   cmake --build build/ --clean-first
-  # to see verbose output, do:
+   to see verbose output, do:
   cmake --build build/ --verbose
-# Run program:
+ Run program:
   ./build/app/shell-app
-# Clean
+ Clean
   cmake --build build/ --target clean
-# Clean and start over:
+ Clean and start over:
   rm -rf build/
